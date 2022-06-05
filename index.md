@@ -1,45 +1,3 @@
-<style type="text/css">
-
-	/*
-
-	h1, h2, h3, h4, h5, h6 {
-		margin: 1.5em 0em 0.5em 0;
-	}
-
-	.quotable {
-		padding: 0.5em;
-		padding-left: 50px;
-		border-left: 5px solid #888;
-		background-image: url('images/quote.png');
-		background-repeat: no-repeat;
-		background-position: 8px 4px;
-		min-height: 40px;
-		font-style: italic;
-		margin: 1em 2em;
-		background-color: rgba(0, 0, 0, 0.5)
-	}
-	.accessibility-dot {
-		width: 1em;
-		height: 1em;
-		border: 2px solid black;
-		display: inline-block;
-		vertical-align: middle;
-	}
-
-	.accessibility-normal { background-color: #0f0; }
-	.accessibility-sequencebreak { background-color: #ff0; }
-	.accessibility-inspect { background-color: #6495ed; }
-	.accessibility-partial { background-color: #ff8c00; }
-	.accessibility-none { background-color: #f00; }
-	.accessibility-cleared { background-color: #333; }
-
-	.status-generic-active { background-color: #888; }
-	.status-generic-success { background-color: #888; }
-	.status-generic-warning { background-color: #888; }
-	.status-generic-error { background-color: #888; }
-
-	*/
-</style>
 
 <blockquote class="quotable">
 	Throughout this documetation, direct quotes from the program author will appear like this.
@@ -59,12 +17,16 @@ Welcome to the **unofficial EmoTracker documentation**! I guess! [EmoTracker](ht
 You know what they say: if you want something done right...
 
 
+## Contents
+
+@TODO hey can you add a programmatic table of contents to github pages? :')
+
+
 ## Pages
 
-* just join discord and search!
-* it's easy! lol
-* (coming soon)
+This section is under construction.
 
+* [Customizing](customizing)
 
 
 ## Getting Started
@@ -129,17 +91,17 @@ Checks are typically color coded:
 		</tr>
 		<tr>
 			<td>
-				<div class="accessibility-dot accessibility-partial"></div>
-			</td>
-			<td>Orange</td>
-			<td>Partially accessible; mixture of the above.</td>
-		</tr>
-		<tr>
-			<td>
 				<div class="accessibility-dot accessibility-none"></div>
 			</td>
 			<td>Red</td>
 			<td>Inaccessible.</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="accessibility-dot accessibility-partial"></div>
+			</td>
+			<td>Orange</td>
+			<td>Partially accessible; mixture of the above.</td>
 		</tr>
 		<tr>
 			<td>
@@ -151,35 +113,53 @@ Checks are typically color coded:
 	</tbody>
 </table>
 
-**I'm color blind and/or these colors are hard to read. Help!**
+**I'm colorblind and/or these colors are hard to read. Help!**
 
-Good news! The tracker supports replacing these specific colors. Simply create a new JSON file at `Documents\EmoTracker\application_colors.json`, with any of the following keys you want to change:
+You can change the colors used for locations. See [Customizing > Changing colors used for tracking](customizing#Changing_colors_used_for_tracking).
 
-<ul>
-	<li>Accessibility tracking:
-		<ul>
-			<li><div class="accessibility-dot accessibility-normal"></div> <code>accessibility_normal</code></li>
-			<li><div class="accessibility-dot accessibility-sequencebreak"></div> <code>accessibility_sequencebreak</code>:</li>
-			<li><div class="accessibility-dot accessibility-inspect"></div> <code>accessibility_inspect</code></li>
-			<li><div class="accessibility-dot accessibility-partial"></div> <code>accessibility_partial</code></li>
-			<li><div class="accessibility-dot accessibility-none"></div> <code>accessibility_none</code></li>
-			<li><div class="accessibility-dot accessibility-cleared"></div> <code>accessibility_cleared</code></li>
-		</ul>
-	</li>
-	<li>I have no idea what these are used for:
-		<ul>
-			<li><div class="accessibility-dot status-generic-active"></div> <code>status_generic_active</code></li>
-			<li><div class="accessibility-dot status-generic-success"></div> <code>status_generic_success</code></li>
-			<li><div class="accessibility-dot status-generic-warning"></div> <code>status_generic_warning</code></li>
-			<li><div class="accessibility-dot status-generic-error"></div> <code>status_generic_error</code></li>
-		</ul>
-	</li>
-</ul>
 
-Example file:
-```
-{
-  "accessibility_sequencebreak": "#ff00ff",
-  "accessibility_cleared": "#000000"
-}
-```
+### Tracking
+
+By default, only accessible, un-cleared locations are visible; any locations marked as <div class="accessibility-dot accessibility-none"></div> Inaccessible or <div class="accessibility-dot accessibility-cleared"></div> Cleared will not appear on the map. This can be changed by toggling the *⚙️ &rarr; Tracking &rarr; Show All Locations* option (or by pushing F11).
+
+
+To interact with the tracker:
+
+* *Right* click a location to mark it as <div class="accessibility-dot accessibility-cleared"></div> Cleared.
+* *Double click* a location to pin it.
+* <img src="images/location-popup.png" alt="Image of a location popup menu" style="float: right; margin: 0 0 0 1em;"> *Left click **and hold*** on a location to open a small popup. (If you release the button while the cursor is in the popup area, it will stay open.)
+	* *Left* clicking on a check will mark it as cleared (or increment its counter, depending).
+	* *Right* clicking on a check will unmark it. *Note that this is the **opposite** behavior outside of this popup!*
+	* Clicking the 📌 icon will pin or unpin the location.
+	* Clicking the 📝 icon will open *another* popup that allows you to add notes.
+		* Click the (+) button to add a new note.
+		* Click the "✏️ Edit Markdown" to be able to enter text. *(This text is only visible if you click the 📝 button again.)*
+		* There is an empty square at the right that can be used to add extra marks to a location. (These marks are visible in the tracker when hovering over the location, and can be removed by clicking the small trash icon that appears when hovering over them in this menu.)
+		* Notes can be deleted by using the 🗑 Trash icon.
+
+Example of adding and removing notes on a location:
+![GIF example of adding a note to a location](images/tedium.gif)
+
+Some trackers or locations may allow you to assign an additional icon to a location, which can be useful for locations that are visible but not accessible, or for tracking which location goes where.
+
+![GIF example of adding marks to track which which entrances go where](images/location-tracking.gif)
+
+
+You can also disable logic checks by choosing *⚙️ &rarr; Tracking &rarr; Ignore All Logic*, which is ~~how you end up with Discord documentation~~ useful if you need to change a mark that you accidentally set, or if the tracker's logic is incorrect. 
+
+The *⚙️ &rarr; Layout* menu may have additional options for swapping the left and right sides of a tracker, showing or hiding the map, or more.
+
+
+### Shortcuts and Hotkeys
+
+* **Ctrl-S**: Saves the current tracker state.
+* **Ctrl-Shift-S**: Same, but allows you to choose a filename.
+* **Ctrl-O**: Opens a saved tracker state.
+* **Ctrl-Z**: Undo
+* **Ctrl-Mousewheel**: Zoom in/out.
+* **Ctrl-0** (zero): Reset zoom level.
+* **F1**: Opens the current pack's documentation URL.
+* **F2**: Opens the *Broadcast View* window.
+* **F5**: Reset tracker to its initial state, including any tracker-specific options.
+* **F11**: Toggle showing *all* locations, including inaccessible or cleared ones.
+
