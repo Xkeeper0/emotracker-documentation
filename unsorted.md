@@ -20,26 +20,19 @@ All of the notes in this section are copied from pinned messages.
 	* no, it is not open source
 	* "if you see unicode boxes, install this font"
 	* what the various location colors mean **(re-documented)**
-	* *~ message break ~*
 	* keyboard shortcuts **(re-documented)**
 	* enabling chathud
 	* chathud command reference
-	* *~ message break ~*
 	* location color accessibility **(re-documented)**
-	* *~ message break ~*
 	* troubleshooting: it's probably a virus scanner problem
-	* "new package": contact the developer directly<br><blockquote class="quotable">If you have a pack you want to distribute via the package manager which is complete and that you are prepared to provide ongoing support for, please DM @EmoSaru to request the pack developer role. Please note that this role does not gate any of the information necessary to build a pack - only distribution information. Everything that’s available for building packs is already available in customization-support</blockquote>
-	* *~ message break ~*
+	* "new package": contact the developer directly
+		* <blockquote class="quotable">If you have a pack you want to distribute via the package manager which is complete and that you are prepared to provide ongoing support for, please DM @EmoSaru to request the pack developer role. Please note that this role does not gate any of the information necessary to build a pack - only distribution information. <strong>Everything that’s available for building packs is already available in customization-support</strong></blockquote>
+		* lol
 	* saving and loading, why your saves are invalid, etc.
-	* *~ message break ~*
 	* a very long list of game-specific discords *(personally this seems like a weird place to put it but, hey, you do you)*
-	* *~ message break ~*
 	* customizing the tracker **(in-progress)**
-	* *~ message break ~*
 	* troubleshooting 2: it's probably still a virus scanner problem
-	* *~ message break ~*
 	* how to use voice control
-	* *~ message break ~*
 	* 32-bit windows support considered optional
 	* autotracker requires internet support (*note: what. why*)
 	* troubleshooting "the package community server is down": it's probably their fault
