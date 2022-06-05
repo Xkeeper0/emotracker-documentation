@@ -37,7 +37,8 @@ rather than actually providing documentation, let's get mad at people trying to 
 
 <blockquote>Here's what I believe to be the full extent of the accessibility rule syntax:
 
-<pre>rule = baseRule | inspectable
+<pre>
+rule = baseRule | inspectable
 inspectable = "{", baseRule, "}"
 baseRule = [clause], { ",", clause }
 clause = [whitespace], (sequenceBreakable | glitchable | counted), [whitespace]
