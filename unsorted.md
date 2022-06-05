@@ -24,6 +24,43 @@ Undocumented command line option: `-dev`
 If you create your own shortcut for EmoTracker, you can add the -dev command line argument. That will cause the entire app to use <code>&lt;user&gt;/EmoTracker/dev</code> instead of <code>/EmoTracker</code> for all relevant directories (edited)
 </blockquote>
 
+----
+
+something regarding location accessibility updates
+<blockquote class="quotable">
+There is caching within a single logic update now if you set <code>"enable_accessibility_rule_caching": true</code> in your pack's settings, but you are correct that each user operation minimally results in one full re-evaluation. (edited)
+</blockquote>
+
+----
+
+rather than actually providing documentation, let's get mad at people trying to figure out how things work
+
+<blockquote>Here's what I believe to be the full extent of the accessibility rule syntax:
+
+<pre>rule = baseRule | inspectable
+inspectable = "{", baseRule, "}"
+baseRule = [clause], { ",", clause }
+clause = [whitespace], (sequenceBreakable | glitchable | counted), [whitespace]
+sequenceBreakable = "[", counted, "]"
+glitchable = "[", "[", counted, "]", "]"
+counted = code, [ ":", integer ]
+code = item | lua | location
+item = identifier
+lua = "$", identifier, { "|", identifier }
+location = "@", identifier, ["/", identifier]
+identifier = <any character>
+integer = &lt;you know what this is&gt;
+whitespace = " " | "\t" | "\n"</pre>
+</blockquote>
+
+wow, thanks. anyway,
+
+<blockquote class="quotable">EmoSaru 2021-11-28 21:42
+<br>
+Okay, I’m really not particularly interested in defining a formal grammar here. It’s an ad hoc parser implementation, and this really isn’t relevant to what more or less anybody here is doing.</quote>
+
+knowing how things work is not relevant to what anybody is doing 👍
+
 
 ## Pinned Messages
 
