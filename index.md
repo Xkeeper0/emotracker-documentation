@@ -5,6 +5,7 @@
 
 Welcome to the **unofficial EmoTracker documentation**! I guess! [EmoTracker](https://emotracker.net/) is a program mainly focused on tracking *randomizer* playthroughs, helping organize and visualize items, locations, and other things. It relies on *packs* created by other people for most of its functionality.
 
+Want to see (and search through) the Discord messages? Check the [online archive of EmoTracker's Discord](https://xkeeper.net/private/emotracker-discord/). Unofficial, of course. :)
 
 ----
 
