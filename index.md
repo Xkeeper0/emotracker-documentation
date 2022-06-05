@@ -115,7 +115,7 @@ Checks are typically color coded:
 
 **I'm colorblind and/or these colors are hard to read. Help!**
 
-You can change the colors used for locations. See [Customizing > Changing colors used for tracking](customizing#Changing_colors_used_for_tracking).
+You can change the colors used for locations. See [Customizing > Changing colors used for tracking](customizing#changing-colors-used-for-tracking).
 
 
 ### Tracking
