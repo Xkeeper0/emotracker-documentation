@@ -1,5 +1,15 @@
 
 
+## Pack Overrides
+
+Overrides allow you to change specific files (images, etc) within a pack without having to edit the pack itself.
+
+Overrides are stored in `Documents\EmoTracker\user_overrides\<pack_name>`. You can open this folder in EmoTracker by going to ***![Settings](images/settings.png) Settings** &rarr; Advanced &rarr; Open Override Folder*
+
+To know where to place specific files, you will need to see where they are stored in the pack itself.
+
+
+
 
 ## Changing colors used for tracking
 

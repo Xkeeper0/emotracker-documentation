@@ -11,6 +11,12 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 1.5em 0em 0.5em 0;
 }
 
+.l { text-align: left; }
+.c { text-align: center; }
+.r { text-align: right; }
+
+img.l, img.c, img.r { display: block; }
+
 .quotable {
 	padding: 0.5em;
 	padding-left: 50px;

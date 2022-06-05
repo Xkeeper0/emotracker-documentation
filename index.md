@@ -60,51 +60,51 @@ Most trackers will supply a map with *locations* or *checks* to help keep track 
 Checks are typically color coded:
 
 
-<table id="accessibility-key">
+<table id="accessibility-key" style="width: unset;">
 	<thead>
 		<tr>
-			<th colspan="2" style='text-align: center;'>Color</th>
-			<th style='text-align: center;'>Meaning</th>
+			<th colspan="2" class='c'>Color</th>
+			<th class='c'>Meaning</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>
+			<td class='r'>
 				<div class="accessibility-dot accessibility-normal"></div>
 			</td>
 			<td>Green</td>
 			<td>Fully accessible.</td>
 		</tr>
 		<tr>
-			<td>
+			<td class='r'>
 				<div class="accessibility-dot accessibility-sequencebreak"></div>
 			</td>
 			<td>Yellow</td>
 			<td><em>Potentially</em> accessible. Might require sequence breaks, glitches, or specific key routing.</td>
 		</tr>
 		<tr>
-			<td>
+			<td class='r'>
 				<div class="accessibility-dot accessibility-inspect"></div>
 			</td>
 			<td>Blue</td>
 			<td>Can be inspected; visible, but not accessible.</td>
 		</tr>
 		<tr>
-			<td>
+			<td class='r'>
 				<div class="accessibility-dot accessibility-none"></div>
 			</td>
 			<td>Red</td>
 			<td>Inaccessible.</td>
 		</tr>
 		<tr>
-			<td>
+			<td class='r'>
 				<div class="accessibility-dot accessibility-partial"></div>
 			</td>
 			<td>Orange</td>
 			<td>Partially accessible; mixture of the above.</td>
 		</tr>
 		<tr>
-			<td>
+			<td class='r'>
 				<div class="accessibility-dot accessibility-cleared"></div>
 			</td>
 			<td>Gray</td>
@@ -138,11 +138,12 @@ To interact with the tracker:
 		* Notes can be deleted by using the 🗑 Trash icon.
 
 Example of adding and removing notes on a location:
-![GIF example of adding a note to a location](images/tedium.gif)
+
+<img src="images/tedium.gif" class="c" alt="GIF example of adding and removing notes on a location" title="you might ask yourself, why do you have to click a button to enable the textbox, instead of just having an empty text box? it's a good question, and not at all an example of how tedious using this can be">
 
 Some trackers or locations may allow you to assign an additional icon to a location, which can be useful for locations that are visible but not accessible, or for tracking which location goes where.
 
-![GIF example of adding marks to track which which entrances go where](images/location-tracking.gif)
+<img src="images/location-tracking.gif" class="c" alt="GIF example of a location having a separate place to mark an item" title="the fun part is when you check the location off, it also deletes the additional mark you made. maybe there's a feature to turn that off. i should check the documentation! oh wait. lol">
 
 
 You can also disable logic checks by choosing *⚙️ &rarr; Tracking &rarr; Ignore All Logic*, which is ~~how you end up with Discord documentation~~ useful if you need to change a mark that you accidentally set, or if the tracker's logic is incorrect. 
