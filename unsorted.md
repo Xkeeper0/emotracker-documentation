@@ -17,6 +17,14 @@ You are *expected* to reverse-engineer the way that EmoTracker works via looking
 in what is likely a shocking surprise to nobody on the planet, this package does **not** implement the "Package Documentation" feature of EmoTracker. lol. of course.
 
 
+### Random stuff
+
+Undocumented command line option: `-dev`
+<blockquote class="quotable">
+If you create your own shortcut for EmoTracker, you can add the -dev command line argument. That will cause the entire app to use <code>&lt;user&gt;/EmoTracker/dev</code> instead of <code>/EmoTracker</code> for all relevant directories (edited)
+</blockquote>
+
+
 ## Pinned Messages
 
 All of the notes in this section are copied from pinned messages.
