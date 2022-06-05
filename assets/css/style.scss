@@ -1,0 +1,36 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.quotable {
+	padding-left: 50px;
+	border-left: 5px solid #888;
+	background-image: url('../../images/quote.png');
+	background-repeat: no-repeat;
+	background-position: 8px 4px;
+	min-height: 40px;
+	font-style: italic;
+}
+
+
+.accessibility-dot {
+	width: 1em;
+	height: 1em;
+	border: 2px solid black;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.accessibility-normal { background-color: #0f0; }
+.accessibility-sequencebreak { background-color: #ff0; }
+.accessibility-inspect { background-color: #6495ed; }
+.accessibility-partial { background-color: #ff8c00; }
+.accessibility-none { background-color: #f00; }
+.accessibility-cleared { background-color: #333; }
+
+.status-generic-active { background-color: #888; }
+.status-generic-success { background-color: #888; }
+.status-generic-warning { background-color: #888; }
+.status-generic-error { background-color: #888; }
+
