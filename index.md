@@ -27,6 +27,7 @@ You know what they say: if you want something done right...
 This section is under construction.
 
 * [Customizing](customizing)
+* [Unsorted Information](unsorted) - unsorted notes and dumps from the discord
 
 
 ## Getting Started

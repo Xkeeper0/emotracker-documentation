@@ -8,6 +8,14 @@ no way to prevent this, says every discord where this happens
 
 ----
 
+## Development
+
+You are *expected* to reverse-engineer the way that EmoTracker works via looking at the [ALTTPR tracker source](https://github.com/emosaru/alttpr_emotracker_emosaru).
+
+<blockquote class="quotable">This package source is provided for use as reference by all EmoTracker pack developers. <strong>I do not provide any support for working with this source beyond discussions in the EmoTracker Discord</strong>, and I do not accept merge requests.</blockquote>
+
+in what is likely a shocking surprise to nobody on the planet, this package does **not** implement the "Package Documentation" feature of EmoTracker. lol. of course.
+
 
 ## Pinned Messages
 
