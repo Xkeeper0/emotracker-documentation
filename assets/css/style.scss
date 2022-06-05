@@ -3,17 +3,26 @@
 
 @import "{{ site.theme }}";
 
+/* fix stupid theme stuff */
+.wrapper { max-width: 1000px; }
+section { max-width: 1000px; }
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1.5em 0em 0.5em 0;
+}
+
 .quotable {
+	padding: 0.5em;
 	padding-left: 50px;
 	border-left: 5px solid #888;
-	background-image: url('../../images/quote.png');
+	background-image: url('images/quote.png');
 	background-repeat: no-repeat;
 	background-position: 8px 4px;
 	min-height: 40px;
 	font-style: italic;
+	margin: 1em 2em;
+	background-color: rgba(0, 0, 0, 0.5)
 }
-
-
 .accessibility-dot {
 	width: 1em;
 	height: 1em;
@@ -33,4 +42,3 @@
 .status-generic-success { background-color: #888; }
 .status-generic-warning { background-color: #888; }
 .status-generic-error { background-color: #888; }
-

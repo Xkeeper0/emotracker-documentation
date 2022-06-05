@@ -1,5 +1,13 @@
 <style type="text/css">
+
+	/*
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 1.5em 0em 0.5em 0;
+	}
+
 	.quotable {
+		padding: 0.5em;
 		padding-left: 50px;
 		border-left: 5px solid #888;
 		background-image: url('images/quote.png');
@@ -7,6 +15,8 @@
 		background-position: 8px 4px;
 		min-height: 40px;
 		font-style: italic;
+		margin: 1em 2em;
+		background-color: rgba(0, 0, 0, 0.5)
 	}
 	.accessibility-dot {
 		width: 1em;
@@ -28,17 +38,22 @@
 	.status-generic-warning { background-color: #888; }
 	.status-generic-error { background-color: #888; }
 
-
+	*/
 </style>
 
-## Emotracker Documentation
+<blockquote class="quotable">
+	Throughout this documetation, direct quotes from the program author will appear like this.
+</blockquote>
 
 Welcome to the **unofficial EmoTracker documentation**! I guess! [EmoTracker](https://emotracker.net/) is a program mainly focused on tracking *randomizer* playthroughs, helping organize and visualize items, locations, and other things. It relies on *packs* created by other people for most of its functionality.
 
-<blockquote class="quotable">
-At this point, if I’m being honest, it is more likely that I remove the [documentation] tab from the website.
-<br><br>
-The Discord serves as the defacto source for documentation and help.
+
+----
+
+<blockquote class="quotable" style="margin-top: 3em;">
+	At this point, if I’m being honest, it is more likely that I remove the [documentation] tab from the website.
+	<br><br>
+	The Discord serves as the defacto source for documentation and help.
 </blockquote>
 
 You know what they say: if you want something done right...
@@ -46,12 +61,9 @@ You know what they say: if you want something done right...
 
 ## Pages
 
-<blockquote class="quotable">
-	Throughout this documetation, direct quotes from the program author will appear like this.
-</blockquote>
-
-
-* [Common Problems](troubleshooting)
+* just join discord and search!
+* it's easy! lol
+* (coming soon)
 
 
 
@@ -144,17 +156,17 @@ Checks are typically color coded:
 Good news! The tracker supports replacing these specific colors. Simply create a new JSON file at `Documents\EmoTracker\application_colors.json`, with any of the following keys you want to change:
 
 * Accessibility tracking:
-	* <div class="accessibility-dot accessibility-normal"></div> <code>accessibility_normal</code>
-	* <div class="accessibility-dot accessibility-sequencebreak"></div> <code>accessibility_sequencebreak</code>:
-	* <div class="accessibility-dot accessibility-inspect"></div> <code>accessibility_inspect</code>
-	* <div class="accessibility-dot accessibility-partial"></div> <code>accessibility_partial</code>
-	* <div class="accessibility-dot accessibility-none"></div> <code>accessibility_none</code>
-	* <div class="accessibility-dot accessibility-cleared"></div> <code>accessibility_cleared</code>
+	* <code><div class="accessibility-dot accessibility-normal"></div> accessibility_normal</code>
+	* <code><div class="accessibility-dot accessibility-sequencebreak"></div> accessibility_sequencebreak</code>:
+	* <code><div class="accessibility-dot accessibility-inspect"></div> accessibility_inspect</code>
+	* <code><div class="accessibility-dot accessibility-partial"></div> accessibility_partial</code>
+	* <code><div class="accessibility-dot accessibility-none"></div> accessibility_none</code>
+	* <code><div class="accessibility-dot accessibility-cleared"></div> accessibility_cleared</code>
 * I have no idea what these are used for
-	* <div class="accessibility-dot status-generic-active"></div> <code>status_generic_active</code>
-	* <div class="accessibility-dot status-generic-success"></div> <code>status_generic_success</code>
-	* <div class="accessibility-dot status-generic-warning"></div> <code>status_generic_warning</code>
-	* <div class="accessibility-dot status-generic-error"></div> <code>status_generic_error</code>
+	* <code><div class="accessibility-dot status-generic-active"></div> status_generic_active</code>
+	* <code><div class="accessibility-dot status-generic-success"></div> status_generic_success</code>
+	* <code><div class="accessibility-dot status-generic-warning"></div> status_generic_warning</code>
+	* <code><div class="accessibility-dot status-generic-error"></div> status_generic_error</code>
 
 Example file:
 ```
