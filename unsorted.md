@@ -50,7 +50,8 @@ lua = "$", identifier, { "|", identifier }
 location = "@", identifier, ["/", identifier]
 identifier = <any character>
 integer = &lt;you know what this is&gt;
-whitespace = " " | "\t" | "\n"</pre>
+whitespace = " " | "\t" | "\n"
+</pre>
 </blockquote>
 
 wow, thanks. anyway,
