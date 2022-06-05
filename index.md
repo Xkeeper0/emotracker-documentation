@@ -155,18 +155,26 @@ Checks are typically color coded:
 
 Good news! The tracker supports replacing these specific colors. Simply create a new JSON file at `Documents\EmoTracker\application_colors.json`, with any of the following keys you want to change:
 
-* Accessibility tracking:
-	* <code><div class="accessibility-dot accessibility-normal"></div> accessibility_normal</code>
-	* <code><div class="accessibility-dot accessibility-sequencebreak"></div> accessibility_sequencebreak</code>:
-	* <code><div class="accessibility-dot accessibility-inspect"></div> accessibility_inspect</code>
-	* <code><div class="accessibility-dot accessibility-partial"></div> accessibility_partial</code>
-	* <code><div class="accessibility-dot accessibility-none"></div> accessibility_none</code>
-	* <code><div class="accessibility-dot accessibility-cleared"></div> accessibility_cleared</code>
-* I have no idea what these are used for
-	* <code><div class="accessibility-dot status-generic-active"></div> status_generic_active</code>
-	* <code><div class="accessibility-dot status-generic-success"></div> status_generic_success</code>
-	* <code><div class="accessibility-dot status-generic-warning"></div> status_generic_warning</code>
-	* <code><div class="accessibility-dot status-generic-error"></div> status_generic_error</code>
+<ul>
+	<li>Accessibility tracking:
+		<ul>
+			<li><div class="accessibility-dot accessibility-normal"></div> <code>accessibility_normal</code></li>
+			<li><div class="accessibility-dot accessibility-sequencebreak"></div> <code>accessibility_sequencebreak</code>:</li>
+			<li><div class="accessibility-dot accessibility-inspect"></div> <code>accessibility_inspect</code></li>
+			<li><div class="accessibility-dot accessibility-partial"></div> <code>accessibility_partial</code></li>
+			<li><div class="accessibility-dot accessibility-none"></div> <code>accessibility_none</code></li>
+			<li><div class="accessibility-dot accessibility-cleared"></div> <code>accessibility_cleared</code></li>
+		</ul>
+	</li>
+	<li>I have no idea what these are used for:
+		<ul>
+			<li><div class="accessibility-dot status-generic-active"></div> <code>status_generic_active</code></li>
+			<li><div class="accessibility-dot status-generic-success"></div> <code>status_generic_success</code></li>
+			<li><div class="accessibility-dot status-generic-warning"></div> <code>status_generic_warning</code></li>
+			<li><div class="accessibility-dot status-generic-error"></div> <code>status_generic_error</code></li>
+		</ul>
+	</li>
+</ul>
 
 Example file:
 ```
