@@ -37,7 +37,6 @@ rather than actually providing documentation, let's get mad at people trying to 
 
 <blockquote>Here's what I believe to be the full extent of the accessibility rule syntax:
 
-<pre>
 rule = baseRule | inspectable
 inspectable = "{", baseRule, "}"
 baseRule = [clause], { ",", clause }
@@ -49,7 +48,7 @@ code = item | lua | location
 item = identifier
 lua = "$", identifier, { "|", identifier }
 location = "@", identifier, ["/", identifier]
-identifier = <any character>
+identifier = &lt;any character&gt;
 integer = &lt;you know what this is&gt;
 whitespace = " " | "\t" | "\n"
 </pre>
