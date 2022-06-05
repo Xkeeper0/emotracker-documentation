@@ -57,7 +57,7 @@ wow, thanks. anyway,
 
 <blockquote class="quotable">EmoSaru 2021-11-28 21:42
 <br>
-Okay, I’m really not particularly interested in defining a formal grammar here. It’s an ad hoc parser implementation, and this really isn’t relevant to what more or less anybody here is doing.</quote>
+Okay, I’m really not particularly interested in defining a formal grammar here. It’s an ad hoc parser implementation, and this really isn’t relevant to what more or less anybody here is doing.</blockquote>
 
 knowing how things work is not relevant to what anybody is doing 👍
 
