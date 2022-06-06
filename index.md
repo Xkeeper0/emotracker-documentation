@@ -20,7 +20,7 @@ You know what they say: if you want something done right...
 
 ## Contents
 
-@TODO hey can you add a programmatic table of contents to github pages? :')
+{:toc}
 
 
 ## Pages
