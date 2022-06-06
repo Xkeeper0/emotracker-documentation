@@ -20,6 +20,7 @@ You know what they say: if you want something done right...
 
 ## Contents
 
+* This is a table of contents.
 {:toc}
 
 
